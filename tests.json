@@ -1,0 +1,34 @@
+[
+  {
+    "title": "(Ref.tools) Can you find me some docs about Mastra",
+    "query": "Find documentation on how to set up Next.js typescript",
+    "runs": 1,
+    "model": "anthropic/claude-3.7-sonnet",
+    "provider": "openrouter",
+    "expectedToolCalls": ["ref_search_documentation"]
+  },
+  {
+    "title": "(Ref.tools)",
+    "query": "Can you search my private docs for instructions on setting up a Redis cache?",
+    "runs": 1,
+    "model": "anthropic/claude-3.7-sonnet",
+    "provider": "openrouter",
+    "expectedToolCalls": ["ref_search_documentation"]
+  },
+  {
+    "title": "(Ref.tools) ESLint + Prettier for React TypeScript",
+    "query": "How to configure ESLint and Prettier for a React TypeScript project",
+    "runs": 1,
+    "model": "anthropic/claude-3.7-sonnet",
+    "provider": "openrouter",
+    "expectedToolCalls": ["ref_search_documentation"]
+  },
+  {
+    "title": "(Ref.tools, private) Redis TTL policy standards",
+    "query": "ref_src=private Redis cache TTL policy and eviction strategy standards",
+    "runs": 1,
+    "model": "anthropic/claude-3.7-sonnet",
+    "provider": "openrouter",
+    "expectedToolCalls": ["ref_search_documentation"]
+  }
+]
